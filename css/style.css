@@ -1,0 +1,110 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(65, 157, 157);
+}
+
+.searchBlock{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	background-color: rgb(65, 157, 157);
+}
+
+.inputBlock{
+	height: 70px;
+	width: 70%;
+	margin-top: 30px;
+	background-color: rgb(65, 157, 157);
+}
+
+.inputBlock form{
+	display: table;
+	margin: 0 auto;
+}
+.inputBlock input{
+	width: 250px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	outline: none;
+}
+.inputBlock button{
+	height: 40px;
+	width: 60px;
+	border-radius:5px;
+	cursor: pointer;
+	border: 1px solid grey;
+	background-color:rgb(214, 205, 205) ;
+}
+.inputBlock button:hover{
+	background-color:rgb(190, 182, 182) ;
+	transition: 0.3s;
+}
+.pages{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.pages button{
+	width: 60px;
+	height: 25px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	cursor: pointer;
+	background-color:rgb(214, 205, 205) ;
+}
+.pages .pageNum{
+	margin: 0 6px;
+}
+.pagesTitle{
+	margin-top: 10px;
+}
+.listsBlock{
+	background-color: rgb(65, 157, 157);
+	height: 100%;
+	width: 65%;
+	margin: 50px auto 0 auto;
+	
+}
+.listsBlock .backBtn{
+	height: 35px;
+	width: 70px;
+	border-radius:5px;
+	border: 1px solid grey;
+	cursor: pointer;
+	background-color:rgb(214, 205, 205) ;
+}
+.listsBlock .backBtn:hover{
+	background-color:rgb(190, 182, 182) ;
+	transition: 0.3s;
+}
+.listsBlock h4{
+	margin-bottom: 10px;
+}
+.listItem{
+	display:flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 15px auto;
+}
+.listItem .infoBtn{
+	margin-left: 10px;
+	width: 60px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	cursor: pointer;
+	background-color:rgb(214, 205, 205) ;
+}
+.listItem .infoBtn:hover{
+	background-color:rgb(190, 182, 182) ;
+	transition: 0.3s;
+}
