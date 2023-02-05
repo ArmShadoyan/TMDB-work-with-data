@@ -26,10 +26,7 @@ getDb(parametrs.filter,parametrs.path,parametrs.api_key,pageNum)
 function createSearchblock(data,pageNum){
 	const html = `
 	<div class="inputBlock">
-		<form>
 			<input type="text" class="searchInput">
-			<button>search</button>
-		</form> 
 		<h3 class="pagesTitle">PAGES</h3>
 		<div class="pages">
 			<button class="leftBtn">previous</button>
@@ -50,9 +47,8 @@ function createSearchblock(data,pageNum){
 
 
 function search(data){
-	const inputBlock = document.querySelector(".inputBlock");
-		inputBlock.addEventListener("submit",(e)=>{
-			e.preventDefault();
+	const input = document.querySelector(".searchInput");
+	input.addEventListener("input",(e)=>{
 			const searchedItems = [];
 			const value = document.querySelector(".searchInput").value;
 			const listsBlock = document.querySelector(".listsBlock");
@@ -61,16 +57,13 @@ function search(data){
 					searchedItems.push(item);
 				}
 			});	
-				listsBlock.innerHTML = "";
-				searchedItems.forEach(item =>{
+				setTimeout(() => {
+					listsBlock.innerHTML = "";
+					searchedItems.forEach(item =>{
 					listsblock(listsBlock,item);
 					createInfoBlock(data);
 				});
-
-				if(value === ""){
-					listsBlock.innerHTML = "";
-					createSearchblock(data,pageNum);
-				}
+				}, 1200);	
 		});
 }	
 
